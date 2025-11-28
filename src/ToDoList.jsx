@@ -20,6 +20,11 @@ function ToDoList(){
         setTasks(updatedTasks);
     }
 
+    function DeleteAllTasks(){
+        const newTasks = []
+        setTasks(newTasks)
+    }
+
     function MoveTaskUp(index){
         if(index > 0){
             const updatedTasks = [...tasks];
@@ -42,6 +47,7 @@ function ToDoList(){
             <div>
                 <input type="text" placeholder="Enter a task..." value={newTask} onChange={HandleInputChange} />
                 <button className="add-button" onClick={AddTask}>Add</button>
+                <button className="delete-button" onClick={DeleteAllTasks}>Delete All</button>
             </div>
 
             <ol>
