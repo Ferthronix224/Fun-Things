@@ -47,7 +47,7 @@ function ToDoList() {
 
     return (
         <div className="to-do-list">
-            <h1>To-Do-List</h1>
+            <h1>Fun</h1>
 
             <div className="task-input">
                 <input 
